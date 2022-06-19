@@ -28,4 +28,10 @@ public class Subject {
     @JoinColumn(name = "sq_fk", referencedColumnName = "id")
     private List<Question> questions;
 
+    @ManyToMany
+    @JoinTable(name = "student_enrolled",
+            joinColumns = @JoinColumn(name = "subject_id"),
+            inverseJoinColumns = @JoinColumn(name = "student_id"))
+    private List<Student> enrolledStudents;
+
 }
