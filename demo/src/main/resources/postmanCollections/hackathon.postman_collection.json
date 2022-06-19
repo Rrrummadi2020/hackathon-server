@@ -1,0 +1,368 @@
+{
+	"info": {
+		"_postman_id": "28776cc9-de49-4c8d-8cb2-0fedfeb58e06",
+		"name": "hackathon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{uri}}users",
+							"host": [
+								"{{uri}}users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 16,\r\n    \"username\": \"ganesha\",\r\n    \"password\": \"rama\",\r\n    \"role\": \"student\",\r\n    \"subjects\": [\r\n        {\r\n            \"id\": 17,\r\n            \"name\": \"Mathematics\",\r\n            \"description\": \"Cool puzzle\",\r\n            \"questions\": [\r\n                {\r\n                    \"id\": 18,\r\n                    \"question\": \"what is your name ?\",\r\n                    \"answer\": \"rama\",\r\n                    \"choices\": [\r\n                        {\r\n                            \"id\": 19,\r\n                            \"name\": \"rama\"\r\n                        },\r\n                        {\r\n                            \"id\": 20,\r\n                            \"name\": \"rangeswara\"\r\n                        },\r\n                        {\r\n                            \"id\": 21,\r\n                            \"name\": \"reddy\"\r\n                        },\r\n                        {\r\n                            \"id\": 22,\r\n                            \"name\": \"ummadi\"\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{uri}}users",
+							"host": [
+								"{{uri}}users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{uri}}users",
+							"host": [
+								"{{uri}}users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{uri}}users",
+							"host": [
+								"{{uri}}users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "student",
+			"item": [
+				{
+					"name": "studnets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{uri}}students",
+							"host": [
+								"{{uri}}students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "students",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\":\"ramu\",\r\n    \"password\":\"bglr\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{uri}}students",
+							"host": [
+								"{{uri}}students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "students",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{uri}}students",
+							"host": [
+								"{{uri}}students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "students",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{uri}}students",
+							"host": [
+								"{{uri}}students"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "subjects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{uri}}subjects",
+					"host": [
+						"{{uri}}subjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subjects Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{uri}}subjects/62",
+					"host": [
+						"{{uri}}subjects"
+					],
+					"path": [
+						"62"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subjects",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Mathematics\",\r\n    \"description\":\"Good exercise fo  brain \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{uri}}subjects",
+					"host": [
+						"{{uri}}subjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subjects id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{uri}}subjects/24",
+					"host": [
+						"{{uri}}subjects"
+					],
+					"path": [
+						"24"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "question subjectId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{uri}}questions/38",
+					"host": [
+						"{{uri}}questions"
+					],
+					"path": [
+						"38"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "questions",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 39,\r\n    \"question\": \"what is your last name ?\",\r\n    \"answer\": \"rama\",\r\n    \"choices\": [\r\n        {\r\n            \"id\": 40,\r\n            \"name\": \"rama\"\r\n        },\r\n        {\r\n            \"id\": 41,\r\n            \"name\": \"rangeswara\"\r\n        },\r\n        {\r\n            \"id\": 42,\r\n            \"name\": \"reddy\"\r\n        },\r\n        {\r\n            \"id\": 43,\r\n            \"name\": \"ummadi\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{uri}}questions",
+					"host": [
+						"{{uri}}questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "questions",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 39,\r\n    \"question\": \"what is your first name ?\",\r\n    \"answer\": \"rama\",\r\n    \"choices\": [\r\n        {\r\n            \"id\": 40,\r\n            \"name\": \"rama\"\r\n        },\r\n        {\r\n            \"id\": 41,\r\n            \"name\": \"rangeswara\"\r\n        },\r\n        {\r\n            \"id\": 42,\r\n            \"name\": \"reddy\"\r\n        },\r\n        {\r\n            \"id\": 43,\r\n            \"name\": \"ummadi\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{uri}}questions/39",
+					"host": [
+						"{{uri}}questions"
+					],
+					"path": [
+						"39"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "questions Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"id\": 39,\r\n        \"question\": \"what is your last name ?\",\r\n        \"answer\": \"rama\",\r\n        \"choices\": [\r\n            {\r\n                \"id\": 40,\r\n                \"name\": \"rama\"\r\n            },\r\n            {\r\n                \"id\": 41,\r\n                \"name\": \"a1\"\r\n            },\r\n            {\r\n                \"id\": 42,\r\n                \"name\": \"reddy\"\r\n            },\r\n            {\r\n                \"id\": 43,\r\n                \"name\": \"ummadi\"\r\n            }\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{uri}}question/39",
+					"host": [
+						"{{uri}}question"
+					],
+					"path": [
+						"39"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "questions Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"question\": \"what is your Father name ?\",\r\n    \"answer\": \"nanna\",\r\n    \"choices\": [\r\n        {\r\n            \"name\": \"nanna\"\r\n        },\r\n        {\r\n            \"name\": \"Father\"\r\n        },\r\n        {\r\n            \"name\": \"tandri\"\r\n        },\r\n        {\r\n            \"name\": \"appa\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{uri}}questions/38",
+					"host": [
+						"{{uri}}questions"
+					],
+					"path": [
+						"38"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "uri",
+			"value": "http://localhost:9191/api",
+			"type": "default"
+		}
+	]
+}
